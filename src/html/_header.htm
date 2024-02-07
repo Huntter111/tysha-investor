@@ -1,4 +1,40 @@
-<header class="header">
+<header data-lp class="header">
 	<div class="header__container">
+		<div class="header__menu menu">
+			<button type="button" class="menu__icon icon-menu icon-menu-open"><span></span></button>
+			<a href="#" class="menu__logo"><img src="@img/logo.png" alt="Логотип" /></a>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="" class="menu__link">Про нас</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Будинки</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Жити в тиші</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+				</ul>
+
+				<button type="button" class="icon-menu header__icon">
+					<svg class="header__close-icon">
+						<use xlink:href="@img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+			</nav>
+
+			<div data-da=".menu__body, 768" class="menu__social social">
+				<a href="#" class="social__link social__link--facebook">
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#facebook"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link social__link--instagram">
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#instagram"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link social__link--telegram">
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#telegram"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
 	</div>
 </header>

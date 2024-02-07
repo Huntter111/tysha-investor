@@ -2,14 +2,33 @@
 // Сніппет (HTML):
 .form {
 	&__row {
+		display: flex;
+		// justify-content: space-between;
+		@include adaptiveValue('column-gap', 56, 20, 0, $maxWidthContainer, 768);
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: toRem(24);
+		}
 	}
 	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		row-gap: toRem(12);
 	}
 	&__line {
+	}
+	&__label {
+		@include adaptiveValue('font-size', 18, 14);
+		line-height: 1.5;
 	}
 	&__input {
 	}
 	&__button {
+		@media (max-width: $mobile) {
+			margin-top: toRem(8);
+		}
+		min-width: 100% !important;
 	}
 	&__error {
 	}
@@ -18,11 +37,11 @@
 
 // <BUTTONS>
 // Сніппет (HTML): btn
-// @import "button";
+@import 'button';
 
 // <INPUTS>
 // Сніппет (HTML): inp
-// @import "input";
+@import 'input';
 
 // <CHECK>
 // Сніппет (HTML): chk
