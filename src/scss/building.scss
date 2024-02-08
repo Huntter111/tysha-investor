@@ -1,0 +1,193 @@
+.investment-tysha-building {
+	@include adaptiveValue('padding-top', 188, 104);
+	@include adaptiveValue('margin-bottom', 240, 64);
+	&__container {
+	}
+	&__wrapper {
+		max-width: toRem(1030);
+	}
+	&__title {
+		text-align: left;
+	}
+
+	&__column {
+	}
+
+	&__row {
+	}
+
+	&__description {
+	}
+
+	&__text {
+		@include adaptiveValue('font-size', 18, 14);
+		line-height: 1.5;
+	}
+
+	&__lead {
+	}
+
+	&__image {
+		img {
+			max-height: toRem(476);
+		}
+		span {
+			width: 57.3%;
+			@include adaptiveValue('height', 79, 60);
+			@include adaptiveValue('font-size', 16, 12);
+			line-height: 1.5;
+			@media (max-width: $mobileSmall) {
+				width: 75%;
+			}
+		}
+	}
+}
+
+.building-selection {
+	@include adaptiveValue('margin-bottom', 240, 64);
+	&__container {
+	}
+	&__box {
+		@include adaptiveValue('margin-bottom', 92, 50);
+	}
+	&__inner {
+		max-width: toRem(1030);
+		margin: 0 auto;
+		&:not(:last-child) {
+			@include adaptiveValue('margin-bottom', 64, 32);
+		}
+	}
+
+	&__columns {
+		display: grid;
+
+		@include adaptiveValue('column-gap', 30, 24);
+		@include adaptiveValue('row-gap', 30, 24, 0, 767, 320);
+
+		@media (min-width: $mobileSmall) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: $mobile) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('row-gap', 16, 11);
+	}
+
+	&__item {
+		position: relative;
+		padding-left: toRem(19);
+		@include adaptiveValue('font-size', 18, 14);
+
+		line-height: 1.5;
+		display: inline-flex;
+		align-items: center;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: calc(50% - 5px);
+			left: 0;
+			width: toRem(11);
+			height: toRem(11);
+			background-color: var(--2-peach);
+			border-radius: 50%;
+		}
+	}
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		column-gap: toRem(30);
+		@include adaptiveValue('row-gap', 30, 24);
+
+		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}
+
+// ! TECHOLOGY
+.tysha-technology {
+	@include adaptiveValue('margin-bottom', 240, 64);
+	&__container {
+	}
+
+	&__headline {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('row-gap', 24, 8);
+		&:not(:last-child) {
+			@include adaptiveValue('margin-bottom', 64, 32);
+		}
+	}
+
+	&__title {
+	}
+
+	&__sub-title {
+		@include adaptiveValue('font-size', 24, 14);
+		line-height: 1.5;
+	}
+
+	&__wrapper {
+		max-width: toRem(811);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('row-gap', 32, 16);
+	}
+
+	&__text {
+	}
+
+	&__image {
+	}
+}
+// ! Energy
+
+.building-energy {
+	@include adaptiveValue('margin-bottom', 240, 64);
+	&__container {
+	}
+
+	&__title {
+		&:not(:last-child) {
+			@include adaptiveValue('margin-bottom', 64, 32);
+		}
+	}
+
+	&__body {
+		display: flex;
+		@include adaptiveValue('gap', 30, 24);
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__content {
+		flex: 0 1 percent(499, $maxWidthContainer);
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('row-gap', 24, 16);
+		p {
+			&:nth-last-child(2) {
+				@include adaptiveValue('margin-bottom', 24, 16);
+			}
+		}
+		@media (max-width: $mobile) {
+			align-items: flex-start;
+		}
+	}
+
+	&__video {
+		flex: 0 1 percent(709, $maxWidthContainer);
+	}
+	&__button {
+	}
+}

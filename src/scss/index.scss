@@ -344,7 +344,13 @@
 
 	&__text {
 		@include adaptiveValue('padding-left', 41, 33);
-		span {
+		a {
+			transition: all 0.3s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #d4a288;
+				}
+			}
 			font-style: italic;
 			font-weight: 300;
 		}
@@ -614,6 +620,10 @@
 .location {
 	&__container {
 		// max-width: toRem(1030);
+	}
+	&__inner {
+		max-width: toRem(1030);
+		margin: 0 auto;
 	}
 	&__headline {
 		max-width: toRem(1030);
@@ -1021,8 +1031,8 @@
 
 		span {
 			position: absolute;
-			bottom: toRem(-1);
-			left: toRem(-1);
+			bottom: 0;
+			left: 0;
 			display: flex;
 			align-items: flex-end;
 			padding-right: toRem(20);

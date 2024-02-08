@@ -242,18 +242,18 @@ function initSliders() {
 		thumbsSwiper.on('click', function () {
 			mySwiper.slideTo(thumbsSwiper.clickedIndex);
 		});
-	}
-	function updateFraction() {
-		let currentSlide = mySwiper.activeIndex + 1;
-		let totalSlides = mySwiper.slides.length;
+		function updateFraction() {
+			let currentSlide = mySwiper.activeIndex + 1;
+			let totalSlides = mySwiper.slides.length;
 
-		let fractionElement = document.querySelector('.swiper-fraction-pagination');
-		if (fractionElement) {
-			fractionElement.innerHTML = `<span class='swiper-fraction-pagination__first'>${currentSlide}/</span><span class='swiper-fraction-pagination__second'>${totalSlides} </span>`;
+			let fractionElement = document.querySelector('.swiper-fraction-pagination');
+			if (fractionElement) {
+				fractionElement.innerHTML = `<span class='swiper-fraction-pagination__first'>${currentSlide}/</span><span class='swiper-fraction-pagination__second'>${totalSlides} </span>`;
+			}
 		}
-	}
 
-	updateFraction();
+		updateFraction();
+	}
 }
 
 // ?

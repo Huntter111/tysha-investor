@@ -42,26 +42,30 @@ import 'intl-tel-input/build/css/intlTelInput.css';
 // });
 // ! ++++++++++++++++++++++
 const input = document.querySelector('#phone');
-const iti = window.intlTelInput(input, {
-	utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js',
-	separateDialCode: true,
-	preferredCountries: ['us', 'gb', 'ua'],
-	allowDropdown: true,
-	autoHideDialCode: false,
-	showSelectedDialCode: true,
-	initialCountry: 'ua',
-	autoFormat: true, // Автоматичне форматування номера
-	formatOnDisplay: true,
-	autoInsertDialCode: true,
-	nationalMode: true, // Встановіть true, якщо хочете використовувати маску тільки для внутрішніх номерів країни
-});
 
-const fullPhoneNumberInput = document.querySelector('#fullPhoneNumber');
-function submitForm() {
-	// Отримання повного номера телефону в міжнародному форматі
-	const fullPhoneNumber = iti.getNumber();
+if (input) {
+	// Перевірка чи елемент існує
+	const iti = window.intlTelInput(input, {
+		utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js',
+		separateDialCode: true,
+		preferredCountries: ['us', 'gb', 'ua'],
+		allowDropdown: true,
+		autoHideDialCode: false,
+		showSelectedDialCode: true,
+		initialCountry: 'ua',
+		autoFormat: true, // Автоматичне форматування номера
+		formatOnDisplay: true,
+		autoInsertDialCode: true,
+		nationalMode: true, // Встановіть true, якщо хочете використовувати маску тільки для внутрішніх номерів країни
+	});
 
-	// Запис повного номера телефону в прихований input
-	fullPhoneNumberInput.value = fullPhoneNumber;
+	const fullPhoneNumberInput = document.querySelector('#fullPhoneNumber');
+	function submitForm() {
+		// Отримання повного номера телефону в міжнародному форматі
+		const fullPhoneNumber = iti.getNumber();
+
+		// Запис повного номера телефону в прихований input
+		fullPhoneNumberInput.value = fullPhoneNumber;
+	}
+	submitForm();
 }
-submitForm();

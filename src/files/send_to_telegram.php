@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Отримання даних з форми
 	$namePerson = $_POST["name"];
   	$phoneNumber = $_POST["fullPhoneNumber]"];
-	$emailAddres = $_POST["email"];
+	// $emailAddres = $_POST["email"];
 	$message = $_POST["message"];
 
 	// Налаштування Telegram-бота
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$text = "<b>Нове повідомлення Build Trust</b>\n";
 	$text .= "<b>Iм'я:</b> " . $namePerson . "\n";
 	$text .= "<b>Телефон:</b> " . $phoneNumber . "\n";
-	$text .= "<b>Пошта:</b> " . $emailAddres . "\n";
+	// $text .= "<b>Пошта:</b> " . $emailAddres . "\n";
 	$text .= "<b>Коментар:</b> " . $message;
 
 	// Відправка повідомлення в Telegram

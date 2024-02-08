@@ -14,8 +14,8 @@
 	@include adaptiveValue('border-radius', 16, 12);
 	@include adaptiveValue('padding-top', 25, 12);
 	@include adaptiveValue('padding-bottom', 26, 12);
-	padding-right: toRem(25);
-	padding-left: toRem(25);
+	@include adaptiveValue('padding-right', 25, 12);
+	@include adaptiveValue('padding-left', 25, 12);
 	line-height: 1.167;
 	transition: all 0.3s;
 	@media (any-hover: hover) {
@@ -39,8 +39,9 @@
 	@include adaptiveValue('border-radius', 16, 12);
 	@include adaptiveValue('padding-top', 25, 12);
 	@include adaptiveValue('padding-bottom', 26, 12);
-	padding-right: toRem(25);
-	padding-left: toRem(25);
+	@include adaptiveValue('padding-right', 25, 12);
+	@include adaptiveValue('padding-left', 25, 12);
+
 	line-height: 1.167;
 	flex-shrink: 0;
 	border-radius: toRem(16);
