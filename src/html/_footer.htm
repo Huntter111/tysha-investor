@@ -3,17 +3,17 @@
 		<div class="footer__columns">
 			<div class="footer__column">
 				<div class="footer__logo">
-					<img src="@img/logo-green.png" alt="Логотип" />
+					<img src="@img/logo-green.svg" alt="Логотип" />
 				</div>
 			</div>
 			<div class="footer__column">
 				<nav class="footer__body">
 					<ul class="footer__list text">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Про нас</a>
+							<a href="about-us.html" class="footer__link" target="_blank">Про нас</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Будинки</a>
+							<a href="building.html" class="footer__link" target="_blank">Будинки</a>
 						</li>
 						<li class="footer__item">
 							<a href="#" class="footer__link">Жити в Тиші</a>
@@ -25,13 +25,13 @@
 				<nav class="footer__body">
 					<ul class="footer__list text">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Інфраструктура</a>
+							<a href="#" data-goto=".infrastructure" data-goto-top="30" class="footer__link">Інфраструктура</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Локації</a>
+							<a href="#" data-goto=".location" data-goto-top="30" class="footer__link">Локації</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Інвестиції</a>
+							<a href="#" data-goto=".investment-tysha" data-goto-top="30" class="footer__link">Інвестиції</a>
 						</li>
 					</ul>
 				</nav>
@@ -40,13 +40,13 @@
 				<nav class="footer__body">
 					<ul class="footer__list text">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Часті питання</a>
+							<a href="#" data-goto=".faq" data-goto-top="30" class="footer__link">Часті питання</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Новини</a>
+							<a href="#" data-goto=".news" data-goto-top="30" class="footer__link">Новини</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">Контакти</a>
+							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="footer__link">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -56,17 +56,21 @@
 			<div class="footer__line"></div>
 			<div class="footer__copywrite">Усі права захищені ©2024TYSHA</div>
 			<div class="footer__social social-footer social">
-				<a href="#" class="social-footer__link social__link">
+				<a
+					href="https://www.facebook.com/tysha.tatariv.ua"
+					class="social-footer__link social__link"
+					target="_blank"
+				>
 					<svg>
 						<use xlink:href="@img/icons/icons.svg#facebook"></use>
 					</svg>
 				</a>
-				<a href="#" class="social-footer__link social__link">
+				<a href="https://www.instagram.com/tysha_tatariv_" class="social-footer__link social__link" target="_blank">
 					<svg>
 						<use xlink:href="@img/icons/icons.svg#instagram"></use>
 					</svg>
 				</a>
-				<a href="#" class="social-footer__link social__link">
+				<a href="https://t.me/TyshaTatariv" class="social-footer__link social__link" target="_blank">
 					<svg>
 						<use xlink:href="@img/icons/icons.svg#telegram"></use>
 					</svg>

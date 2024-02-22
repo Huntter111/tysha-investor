@@ -21,7 +21,7 @@ body::after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding: 30px 10px;
+	padding: toRem(30) toRem(15);
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
@@ -79,13 +79,22 @@ body::after {
 		@include adaptiveValue('top', 40, 10);
 		@include adaptiveValue('right', 40, 10);
 		z-index: 200;
-		color: green;
+		// color: green;
 		svg {
 			@include adaptiveValue('width', 40, 15);
 			@include adaptiveValue('height', 40, 15);
 
-			fill: green;
+			// fill: green;
 			stroke: #f7efe8;
+			transition: all 0.3s;
+			@media (any-hover: hover) {
+				&:hover {
+					stroke: var(--2-peach);
+				}
+			}
+			&:active {
+				stroke: var(--2-deep-green);
+			}
 		}
 	}
 
@@ -126,8 +135,8 @@ body::after {
 		display: flex;
 		flex-direction: column;
 		row-gap: toRem(16);
-		@include adaptiveValue('font-size', 18, 12);
 		line-height: 1.5;
+		@include adaptiveValue('font-size', 18, 12);
 		@include adaptiveValue('padding-top', 64, 24);
 		@include adaptiveValue('padding-bottom', 91, 24);
 		@include adaptiveValue('padding-left', 55, 16);

@@ -15,12 +15,16 @@ textarea {
 	// padding: 0px 20px;
 	color: var(--2-merino);
 	padding-bottom: toRem(4);
-	border-bottom: 1px solid #eee;
+	border-bottom: toRem(1) solid #eee;
 	background-color: transparent;
 	outline: none;
 	&._form-focus {
 	}
 	&._form-error {
+		border-bottom: toRem(1) solid #bf2020;
+	}
+	:focus {
+		outline: none;
 	}
 }
 .input[placeholder]:not([data-placeholder-nohiden]) {
@@ -36,5 +40,4 @@ textarea.input {
 	resize: none;
 	padding: 0px 0px;
 	height: toRem(56);
-	// border-bottom: 1px solid #eee;
 }

@@ -3,20 +3,16 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Отримання даних з форми
 	$namePerson = $_POST["name"];
-  	$phoneNumber = $_POST["fullPhoneNumber]"];
-	// $emailAddres = $_POST["email"];
-	$message = $_POST["message"];
+  	$phoneNumber = $_POST["phone"];
 
 	// Налаштування Telegram-бота
-	$botToken = "6326698251:AAG4khK9I-svNecAgxBSln9_g1UijVHI-6Y";
-	$chatId = "-977034876";
+	$botToken = "7144450791:AAFnGuYccslwrBJ9QeSEDWFjtc980_n4FGI";
+	$chatId = "-4116812677";
 
 	// Формування повідомлення
-	$text = "<b>Нове повідомлення Build Trust</b>\n";
+	$text = "<b>Нове повідомлення Tysha</b>\n";
 	$text .= "<b>Iм'я:</b> " . $namePerson . "\n";
 	$text .= "<b>Телефон:</b> " . $phoneNumber . "\n";
-	// $text .= "<b>Пошта:</b> " . $emailAddres . "\n";
-	$text .= "<b>Коментар:</b> " . $message;
 
 	// Відправка повідомлення в Telegram
 	$url = "https://api.telegram.org/bot" . $botToken . "/sendMessage";
@@ -34,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	curl_close($ch);
 
 	if ($response) {
-		header("Location: https://buildtrust.com.ua/thank-you-page.html");
+		header("Location: https://warzone.org.ua/dist/thank-you-page.html");
 		exit();
 	} else {
-		header("Location: https://buildtrust.com.ua/404.html");
+		header("Location: https://warzone.org.ua/dist/404.html");
 		// echo "Error";
 	}
 }

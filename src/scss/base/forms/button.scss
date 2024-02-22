@@ -9,6 +9,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	background-color: var(--secondary);
+	color: var(--2-deep-green);
 	@include adaptiveValue('font-size', 18, 12);
 	@include adaptiveValue('min-width', 393, 200);
 	@include adaptiveValue('border-radius', 16, 12);
@@ -64,7 +65,13 @@
 .button-short {
 	display: inline-flex;
 	max-width: toRem(238);
-
+	@include adaptiveValue('font-size', 18, 12);
+	@include adaptiveValue('padding-top', 25, 12);
+	@include adaptiveValue('padding-bottom', 26, 12);
+	@include adaptiveValue('padding-right', 25, 12);
+	@include adaptiveValue('padding-left', 25, 12);
+	@include adaptiveValue('border-radius', 16, 12);
+	font-weight: 400;
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
@@ -124,9 +131,6 @@
 		content: '';
 		z-index: -1;
 		position: absolute;
-		// top: -10%;
-		// left: 5%;
-		// width: toRem(128);`
 		top: toRem(-5);
 		// left: toRem(12);
 		@include adaptiveValue('left', 12, 5);

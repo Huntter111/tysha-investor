@@ -21,7 +21,7 @@
 // @import "base/showmore";
 
 // Стилі для липкого блоку
-// @import "base/sticky";
+// @import 'base/sticky';
 
 // Стилі для повноекранного блоку
 // @import "base/fullscreen";
@@ -87,6 +87,7 @@
 	overflow: hidden;
 	height: 0;
 	padding-bottom: 56.25%;
+	// padding-bottom: 53.107%;
 	video,
 	iframe,
 	object,

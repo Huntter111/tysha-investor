@@ -3,13 +3,33 @@
 	@@include('html/_head.htm',{ "title":"Будинки" })
 	<body>
 		<div class="wrapper">
-			@@include('html/_header.htm',{})
+			@@include('html/_header-building.htm',{})
 			<main class="page">
-				<!-- <a href="" class="button">Інвестувати</a>
-				<a href="" class="button-border">Інвестувати</a>
-				<a href="" class="button-short">Інвестувати</a>
-				<a href="" class="button-bb">Детальніше</a>
-				<a href="" class="button-bg">Показати на мапі</a> -->
+				<div class="buttons-menu">
+					<div class="button-menu">
+						<div id="main-div">
+							<div id="main-button" class="wave">
+								<i class="fas fa-comments fa-times"></i>
+							</div>
+							<a href="https://t.me/TyshaTatariv" class="telegram-color main-button__link" target="_blank"
+								><i class="fab fa-telegram-plane"></i
+							></a>
+							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="phone-color main-button__link"
+								><i class="fab fa-whatsapp"></i
+							></a>
+						</div>
+					</div>
+					<a data-watch href="#" data-goto=".investment-tysha-building" class="arrow-up">
+						<div class="arrow-up__wrapper">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none">
+								<path
+									d="M3.40596 22.7016C3.65966 22.9479 4.00078 23.0833 4.3543 23.078C4.70781 23.0728 5.04478 22.9274 5.29109 22.6738L16.1837 11.4541L27.4033 22.3466C27.6584 22.5858 27.9971 22.7152 28.3466 22.707C28.6961 22.6988 29.0285 22.5536 29.272 22.3028C29.5155 22.0519 29.6508 21.7155 29.6486 21.3659C29.6465 21.0163 29.5071 20.6815 29.2606 20.4336L17.0844 8.61244C16.8307 8.36621 16.4896 8.23082 16.136 8.23605C15.7825 8.24128 15.4456 8.3867 15.1993 8.64033L3.37807 20.8165C3.13183 21.0702 2.99645 21.4113 3.00168 21.7649C3.00691 22.1184 3.15233 22.4553 3.40596 22.7016Z"
+								/>
+							</svg>
+						</div>
+					</a>
+				</div>
+
 				<section class="investment-tysha-building">
 					<div class="investment-tysha__container investment-tysha-building__container">
 						<div class="investment-tysha__wrapper investment-tysha-building__wrapper">
@@ -47,8 +67,12 @@
 								<div class="investment-tysha__row investment-tysha-building__row">
 									<div class="investment-tysha__description investment-tysha-building__description">
 										<div class="investment-tysha__text investment-tysha-building__text">
-											Наша сервісна компанія з великим досвідом - гарантує вам високий сервіс та регулярний
-											дохід. 
+											Кожен квадратний метр котеджу продуманий нашими дизайнерами заради комфорту мешканців.
+											Панорамні вікна, аби сповна насолодитися гірським сонцем.
+										</div>
+										<div class="investment-tysha__text investment-tysha-building__text">
+											Стильний дизайн інтер'єру у світлих відтінках візуально додає ще більше простору. А
+											також повністю обладнана кухня, де є все необхідне для приготування улюблених страв.
 										</div>
 									</div>
 									<div class="investment-tysha__image investment-tysha-building__image">
@@ -60,16 +84,8 @@
 						</div>
 					</div>
 				</section>
-				<a href="#" class="arrow-up">
-					<div class="arrow-up__wrapper">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none">
-							<path
-								d="M3.40596 22.7016C3.65966 22.9479 4.00078 23.0833 4.3543 23.078C4.70781 23.0728 5.04478 22.9274 5.29109 22.6738L16.1837 11.4541L27.4033 22.3466C27.6584 22.5858 27.9971 22.7152 28.3466 22.707C28.6961 22.6988 29.0285 22.5536 29.272 22.3028C29.5155 22.0519 29.6508 21.7155 29.6486 21.3659C29.6465 21.0163 29.5071 20.6815 29.2606 20.4336L17.0844 8.61244C16.8307 8.36621 16.4896 8.23082 16.136 8.23605C15.7825 8.24128 15.4456 8.3867 15.1993 8.64033L3.37807 20.8165C3.13183 21.0702 2.99645 21.4113 3.00168 21.7649C3.00691 22.1184 3.15233 22.4553 3.40596 22.7016Z"
-								fill="#F7EFE8"
-							/>
-						</svg>
-					</div>
-				</a>
+				<!-- ! Блок для додавання прокручування в конкретному місці щоб воно з'являлось -->
+				<div id="target"></div>
 				<section class="location building-selection">
 					<div class="location__container building-selection__container"></div>
 					<div class="location__box building-selection__box box">
@@ -133,8 +149,10 @@
 							</div>
 						</div>
 						<div class="building-selection__buttons">
-							<a href="#" class="button">Інвестувати</a>
-							<a href="#" class="button-border">отримати консультацію</a>
+							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="button">Інвестувати</a>
+							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="button-border"
+								>отримати консультацію</a
+							>
 						</div>
 					</div>
 				</section>
@@ -149,7 +167,7 @@
 						<div class="tysha-technology__wrapper">
 							<div class="tysha-technology__text text">Приклад будівництва стіни та підлоги</div>
 							<div class="tysha-technology__image">
-								<img src="@img/building-page/bulding-technology/1.png" alt="Схема будинку" />
+								<img src="@img/building-page/bulding-technology/1.png" class="ibg" alt="Схема будинку" />
 							</div>
 							<div class="tysha-technology__text text">
 								Високий рівень енергоефективності. Даємо 50 років гарантії на каркас.
@@ -164,10 +182,26 @@
 							<div class="building-energy__content">
 								<p>На кожному будинку встановлені сонячні панелі з накопичувальними батареями.</p>
 								<p>Також є генератор для повної енергонезалежності комплексу.</p>
-								<a href="#" class="building-energy__button button">ПОДИВИТИСЯ НОВИНИ</a>
+								<a href="http://tyshahotel.online/index.html#news" class="building-energy__button button"
+									>ПОДИВИТИСЯ НОВИНИ</a
+								>
 							</div>
 							<div class="building-energy__video">
-								<video src=""></video>
+								<div class="video">
+									<video
+										poster="http://tyshahotel.online/videos/posters/energy-poster-02.png"
+										class="video__item"
+										controls
+										preload="metadata"
+										controlslist="nodownload"
+									>
+										<source src="videos/02.mp4" type="" />
+									</video>
+									<button
+										id="custom-play-video-button"
+										class="video-play-button video-play-button--middle"
+									></button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -204,7 +238,9 @@
 												<use xlink:href="@img/icons/icons.svg#location"></use>
 											</svg>
 										</div>
-										<a href="#" class="contact-tysha__location">с.Татарів Івано-Франківської області</a>
+										<a href="#" class="contact-tysha__location" target="_blank"
+											>с.Татарів Івано-Франківської області</a
+										>
 									</div>
 								</div>
 								<div data-da=".tysha-revision__container, 767, 3" class="body-tysha-revision__social social">
@@ -228,34 +264,42 @@
 							<div class="tysha-revision__form">
 								<form
 									id="myForm"
-									action="files/send_to_telegram.php"
+									action="files/send_to_telegram-message.php"
 									method="POST"
 									class="form tysha-revision-form"
 								>
 									<div class="form__row tysha-revision-form__row">
-										<div class="form__column tysha-revision-form__column">
-											<label class="form__label" for="user-name">Ваше ім’я*</label>
+										<div class="form__column form-investment__column">
+											<label class="form__label" for="userName">Ваше ім’я*</label>
 											<input
-												id="user-name"
+												data-validate
+												data-required="name"
+												id="userName"
 												type="text"
 												name="name"
-												data-error="Error"
 												class="input"
 												required
 											/>
-											<input type="hidden" id="fullPhoneNumber" name="fullPhoneNumber" />
+										</div>
+										<div class="form__column form-investment__column">
+											<label class="form__label" for="">Номер телефону*</label>
+											<!-- id="phone" -->
+											<input
+												data-validate
+												data-required="phone"
+												type="tel"
+												name="phone"
+												class="input phone-input-mask"
+												required
+											/>
 										</div>
 
 										<div class="form__column tysha-revision-form__column">
-											<label for="phoneNumber">Номер телефону*</label>
-											<input type="tel" id="phoneNumber" name="phone" class="input" required />
-										</div>
-										<div class="form__column tysha-revision-form__column">
-											<label for="userText">Ваше повідомнення</label>
+											<label class="form__label" for="userText">Ваше повідомнення</label>
 											<textarea id="userText" autocomplete="off" name="message" class="input"></textarea>
 										</div>
-										<div class="form__column tysha-revision-form__column">
-											<button type="submit" class="tysha-revision-form__button button-short">
+										<div class="form__column form-investment__column">
+											<button type="submit" class="form-investment__button form__button button-short">
 												Інвестувати
 											</button>
 										</div>
@@ -266,7 +310,7 @@
 					</div>
 				</section>
 			</main>
-			@@include('html/_footer.htm',{})
+			@@include('html/_footer-building.htm',{})
 		</div>
 
 		@@include('html/_js.htm',{})

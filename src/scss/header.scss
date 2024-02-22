@@ -6,6 +6,12 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
+	color: #f7efe8;
+	&--green {
+		@media (min-width: $mobile) {
+			color: var(--2-deep-green);
+		}
+	}
 	&__container {
 		display: flex;
 	}
