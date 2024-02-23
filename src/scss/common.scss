@@ -146,6 +146,7 @@
 .swiper-block-style {
 	&__buttons {
 		& > button {
+			z-index: 2 !important;
 			width: toRem(48) !important;
 			height: toRem(48) !important;
 			@media (max-width: $mobileSmall) {

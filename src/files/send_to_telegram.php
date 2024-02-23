@@ -30,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	curl_close($ch);
 
 	if ($response) {
-		header("Location: https://warzone.org.ua/dist/thank-you-page.html");
+		header("Location: http://tyshahotel.online/thank-you-page.html");
 		exit();
 	} else {
-		header("Location: https://warzone.org.ua/dist/404.html");
+		header("Location: http://tyshahotel.online/404.html");
 		// echo "Error";
 	}
 }

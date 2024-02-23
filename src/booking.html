@@ -87,87 +87,34 @@
 				<!-- ! Блок для додавання прокручування в конкретному місці щоб воно з'являлось -->
 				<div id="target"></div>
 				<section class="location building-selection">
-					<div class="location__container building-selection__container">
-						<div class="building-selection__wrapper">
-							<div class="building-selection__select">
-								<select name="form[]" data-class-modif="form">
-									<option value="" selected>Будинки (54m²)</option>
-									<option value="1">Будинок №1</option>
-									<option value="2">Будинок №2</option>
-									<option value="3">Будинок №3</option>
-								</select>
-							</div>
-						</div>
-					</div>
+					<div class="location__container building-selection__container"></div>
 					<div class="location__box building-selection__box box">
 						<!-- Оболонка слайдера -->
 						<div class="location__slider swiper-block-style__slider swiper">
 							<!-- Частина слайдера, що рухається -->
-
 							<div class="location__wrapper swiper-block-style__wrapper swiper-wrapper">
-								<!-- Слайд 1 -->
-								<div class="location__slide swiper-block-style__slide swiper-slide">
-									<div class="location__slide__image location-image--1">
-										<img src="@img/building-page/building-selection/1.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--2">
-										<img src="@img/building-page/building-selection/5.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--3">
-										<img src="@img/building-page/building-selection/5.png" alt="Приміщення 1" class="ibg" />
-									</div>
+								<!-- Слайд -->
+								<div class="location__slide swiper-block-style__slideslide swiper-slide">
+									<img src="@img/building-page/building-selection/1.png" alt="Приміщення 1" class="ibg" />
 								</div>
-								<!-- Слайд 2 -->
+								<!-- Слайд -->
 								<div class="location__slide swiper-block-style__slide swiper-slide">
-									<div class="location__slide__image location-image--1">
-										<img src="@img/building-page/building-selection/2.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--2">
-										<img src="@img/building-page/building-selection/4.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--3">
-										<img src="@img/building-page/building-selection/4.png" alt="Приміщення 1" class="ibg" />
-									</div>
+									<img src="@img/building-page/building-selection/2.png" alt="Приміщення 2" class="ibg" />
 								</div>
-								<!-- Слайд 3 -->
+								<!-- Слайд -->
 								<div class="location__slide swiper-block-style__slide swiper-slide">
-									<div class="location__slide__image location-image--1">
-										<img src="@img/building-page/building-selection/3.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--2">
-										<img src="@img/building-page/building-selection/2.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--3">
-										<img src="@img/building-page/building-selection/2.png" alt="Приміщення 1" class="ibg" />
-									</div>
+									<img src="@img/building-page/building-selection/3.png" alt="Приміщення 3" class="ibg" />
 								</div>
-								<!-- Слайд 4 -->
+								<!-- Слайд -->
 								<div class="location__slide swiper-block-style__slide swiper-slide">
-									<div class="location__slide__image location-image--1">
-										<img src="@img/building-page/building-selection/4.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--2">
-										<img src="@img/building-page/building-selection/3.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--3">
-										<img src="@img/building-page/building-selection/3.png" alt="Приміщення 1" class="ibg" />
-									</div>
+									<img src="@img/building-page/building-selection/4.png" alt="Приміщення 4" class="ibg" />
 								</div>
-								<!-- Слайд 5 -->
+								<!-- Слайд -->
 								<div class="location__slide swiper-block-style__slide swiper-slide">
-									<div class="location__slide__image location-image--1">
-										<img src="@img/building-page/building-selection/5.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--2">
-										<img src="@img/building-page/building-selection/1.png" alt="Приміщення 1" class="ibg" />
-									</div>
-									<div class="location__slide__image location-image--3">
-										<img src="@img/building-page/building-selection/1.png" alt="Приміщення 1" class="ibg" />
-									</div>
+									<img src="@img/building-page/building-selection/5.png" alt="Приміщення 5" class="ibg" />
 								</div>
 							</div>
 						</div>
-
 						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
 						<div class="swiper-block-style__buttons location-swiper__buttons">
 							<button
@@ -203,8 +150,8 @@
 						</div>
 						<div class="building-selection__buttons">
 							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="button">Інвестувати</a>
-							<a href="https://tyshahotel.online/index.html#investment-tysha" class="button-border"
-								>Детальніше</a
+							<a href="#" data-goto=".tysha-revision" data-goto-top="30" class="button-border"
+								>отримати консультацію</a
 							>
 						</div>
 					</div>
@@ -228,157 +175,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="building-energy">
-					<div class="building-energy__container">
-						<h2 class="building-energy__title title">Енергонезалежність</h2>
-						<div class="building-energy__body">
-							<div class="building-energy__content">
-								<p>На кожному будинку встановлені сонячні панелі з накопичувальними батареями.</p>
-								<p>Також є генератор для повної енергонезалежності комплексу.</p>
-								<a href="http://tyshahotel.online/index.html#news" class="building-energy__button button"
-									>ПОДИВИТИСЯ НОВИНИ</a
-								>
-							</div>
-							<div class="building-energy__video">
-								<div class="video">
-									<video
-										poster="http://tyshahotel.online/videos/posters/energy-poster-02.png"
-										class="video__item"
-										controls
-										preload="metadata"
-										controlslist="nodownload"
-									>
-										<source src="videos/02.mp4" type="" />
-									</video>
-									<button
-										id="custom-play-video-button"
-										class="video-play-button video-play-button--middle"
-									></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+				<section class="booking-form">
+					<div class="booking-form__container">
+						<lable>З якого числа</lable>
+						<input
+							id="startDatePicker"
+							data-datepicker
+							type="text"
+							name="start-date"
+							placeholder="Початкова дата"
+						/>
 
-				<section class="tysha-revision">
-					<div class="tysha-revision__container">
-						<div class="tysha-revision__wrapper">
-							<div class="tysha-revision__body body-tysha-revision">
-								<h2 data-da=".tysha-revision__container, 767, 0" class="body-tysha-revision__title">
-									Записатися на перегляд
-								</h2>
-								<div data-da=".tysha-revision__container, 767, 2" class="body-tysha-revision__contacts">
-									<div class="body-tysha-revision__contact contact-tysha">
-										<div class="contact-tysha__icon">
-											<svg>
-												<use xlink:href="@img/icons/icons.svg#email"></use>
-											</svg>
-										</div>
-										<a href="mailto:tysha.tatariv.info@gmail.com" class="contact-tysha__link"
-											>tysha.tatariv.info@gmail.com</a
-										>
-									</div>
-									<div class="body-tysha-revision__contact contact-tysha">
-										<div class="contact-tysha__icon">
-											<svg>
-												<use xlink:href="@img/icons/icons.svg#phone"></use>
-											</svg>
-										</div>
-										<a class="contact-tysha__phone" href="tel:+380737772008">+38 073 777 20 08</a>
-									</div>
-									<div class="body-tysha-revision__contact contact-tysha">
-										<div class="contact-tysha__icon">
-											<svg>
-												<use xlink:href="@img/icons/icons.svg#location"></use>
-											</svg>
-										</div>
-										<a
-											href="https://maps.app.goo.gl/sWY111Rax5NdAVFg7"
-											class="contact-tysha__location"
-											target="_blank"
-											>с.Татарів Івано-Франківської області</a
-										>
-									</div>
-								</div>
-								<div data-da=".tysha-revision__container, 767, 3" class="body-tysha-revision__social social">
-									<a
-										href="https://www.facebook.com/tysha.tatariv.ua"
-										class="social__link social__link--facebook"
-										target="_blank"
-									>
-										<svg>
-											<use xlink:href="@img/icons/icons.svg#facebook"></use>
-										</svg>
-									</a>
-									<a
-										href="https://www.instagram.com/tysha_tatariv_"
-										class="social__link social__link--instagram"
-										target="_blank"
-									>
-										<svg>
-											<use xlink:href="@img/icons/icons.svg#instagram"></use>
-										</svg>
-									</a>
-									<a
-										href="https://t.me/TyshaTatariv"
-										class="social__link social__link--telegram"
-										target="_blank"
-									>
-										<svg>
-											<use xlink:href="@img/icons/icons.svg#telegram"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="tysha-revision__form">
-								<form
-									id="myForm"
-									action="files/send_to_telegram-message.php"
-									method="POST"
-									class="form tysha-revision-form"
-								>
-									<div class="form__row tysha-revision-form__row">
-										<div class="form__column form-investment__column">
-											<label class="form__label" for="userName">Ваше ім’я*</label>
-											<input
-												data-validate
-												data-required="name"
-												id="userName"
-												type="text"
-												name="name"
-												class="input"
-												required
-											/>
-											<!-- <input type="hidden" id="fullPhoneNumber" name="fullPhoneNumber" /> -->
-										</div>
-
-										<div class="form__column form-investment__column">
-											<label class="form__label" for="">Номер телефону*</label>
-											<!-- id="phone" -->
-											<input
-												data-validate
-												data-required="phone"
-												type="tel"
-												name="phone"
-												class="input phone-input-mask"
-												required
-											/>
-										</div>
-										<div class="form__column form-investment__column">
-											<label class="form__label" for="userText">Ваше повідомнення</label>
-											<textarea id="userMessage" autocomplete="off" name="message" class="input"></textarea>
-										</div>
-									</div>
-									<div class="form__row form__row--short tysha-revision-form__row">
-										<div class="form__column form-investment__column">
-											<button type="submit" class="form-investment__button form__button button-short">
-												Залишити заявку
-											</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
+						<lable>По яке число</lable>
+						<input id="endDatePicker" data-datepicker type="text" name="end-date" placeholder="Кінцева дата" />
 					</div>
 				</section>
 			</main>

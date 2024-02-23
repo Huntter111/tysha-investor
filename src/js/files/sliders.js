@@ -84,7 +84,7 @@ function initSliders() {
 		// Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
 		new Swiper('.location__slider', {
-			modules: [Navigation, Pagination, EffectCoverflow],
+			modules: [Navigation, Pagination, EffectCoverflow, Autoplay],
 			observer: true,
 			observeParents: true,
 			loop: true,

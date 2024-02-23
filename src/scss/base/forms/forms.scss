@@ -9,6 +9,15 @@
 			flex-direction: column;
 			row-gap: toRem(24);
 		}
+		&:nth-child(1) {
+			@include adaptiveValue('margin-bottom', 48, 32);
+		}
+		&--short {
+			align-items: flex-start;
+			@media (max-width: $mobileSmall) {
+				align-items: center;
+			}
+		}
 	}
 	&__column {
 		display: flex;
@@ -28,10 +37,16 @@
 	&__input {
 	}
 	&__button {
-		@media (max-width: $mobile) {
-			margin-top: toRem(8);
+		@media (min-width: $mobileSmall) {
+			min-width: toRem(238);
 		}
-		min-width: 100% !important;
+		@media (max-width: $mobileSmall) {
+			min-width: toRem(200);
+		}
+		@media (max-width: $mobile) {
+			// margin-top: toRem(8);
+		}
+		// min-width: 100% !important;
 		@include adaptiveValue('font-size', 18, 12);
 	}
 	&__error {
@@ -57,7 +72,7 @@
 
 // <SELECT>
 // Сніппет (HTML): sel
-// @import "select";
+@import 'select';
 
 // <RATING>
 // Сніппет (HTML): rating

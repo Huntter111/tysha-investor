@@ -191,3 +191,51 @@ if (document.querySelector('.arrow-up')) {
 // document.getElementById('next').addEventListener('click', function () {
 // 	calendar.nextMonth();
 // });
+// Функція, яка буде викликана при зміні значення селекту
+
+// ! Відслідковування подій вибору у селекті
+// document.addEventListener('selectCallback', function (e) {
+// 	const selectedValue = e.detail.select.value;
+// });
+// document.addEventListener('selectCallback', function (e) {
+// 	const selectedValue = e.detail.select.value;
+// 	const slides = document.querySelectorAll('.location__slide');
+
+// 	slides.forEach((slide, index) => {
+// 		const image1 = slide.querySelector('.location-image--1');
+// 		const image2 = slide.querySelector('.location-image--2');
+// 		const image3 = slide.querySelector('.location-image--3');
+
+// 		// Спочатку приховуємо всі зображення, окрім першого
+// 		image1.style.display = 'block';
+// 		image2.style.display = 'none';
+// 		image3.style.display = 'none';
+
+// 		// Змінюємо стилі в залежності від вибору у селекті
+// 		if (selectedValue === '1') {
+// 			image1.style.display = 'block';
+// 			image2.style.display = 'none';
+// 			image3.style.display = 'none';
+// 		} else if (selectedValue === '2') {
+// 			image1.style.display = 'none';
+// 			image2.style.display = 'block';
+// 			image3.style.display = 'none';
+// 		} else if (selectedValue === '3') {
+// 			image1.style.display = 'none';
+// 			image2.style.display = 'none';
+// 			image3.style.display = 'block';
+// 		}
+// 	});
+// });
+document.addEventListener('selectCallback', function (e) {
+	const selectedValue = e.detail.select.value;
+	const slides = document.querySelectorAll('.location__slide');
+
+	slides.forEach((slide, index) => {
+		for (let i = 1; i <= 10; i++) {
+			const image = slide.querySelector(`.location-image--${i}`);
+			if (!image) continue; // Якщо зображення з даним класом не знайдено, переходимо до наступного
+			image.style.display = i === parseInt(selectedValue) ? 'block' : 'none';
+		}
+	});
+});

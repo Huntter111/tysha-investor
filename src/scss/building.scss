@@ -14,9 +14,9 @@
 	}
 
 	&__row {
-		&:nth-child(3) {
-			align-items: flex-end;
-		}
+		// &:nth-child(3) {
+		// 	align-items: flex-end;
+		// }
 	}
 
 	&__description {
@@ -36,9 +36,10 @@
 		}
 		span {
 			width: 57.3%;
-			@include adaptiveValue('height', 79, 60);
+
+			@include adaptiveValue('height', 99, 60);
 			@include adaptiveValue('font-size', 16, 12);
-			line-height: 1.5;
+			line-height: 1.4;
 			@media (max-width: $mobileSmall) {
 				width: 75%;
 			}
@@ -48,6 +49,15 @@
 
 .building-selection {
 	@include adaptiveValue('margin-bottom', 240, 64);
+	&__wrapper {
+		max-width: toRem(1005);
+		margin: 0 auto;
+		display: flex;
+		justify-content: end;
+	}
+	&__select {
+		@include adaptiveValue('width', 227, 131);
+	}
 	&__container {
 	}
 	&__box {
@@ -192,5 +202,22 @@
 		flex: 0 1 percent(709, $maxWidthContainer);
 	}
 	&__button {
+	}
+}
+// ! Location Slide
+// .hidden {
+// 	display: none;
+// }
+.location-image {
+	&--2,
+	&--3,
+	&--4,
+	&--5,
+	&--6,
+	&--7,
+	&--8,
+	&--9,
+	&--10 {
+		display: none;
 	}
 }
